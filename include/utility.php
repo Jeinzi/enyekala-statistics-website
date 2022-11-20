@@ -15,7 +15,7 @@ function alert($text) {
 // - 1st line: database user
 // - 2nd line: database password
 // - 3rd line: database host, e.g. localhost
-function connectDb($authFile = __DIR__ . "/password") {
+function connectDb($authFile = __DIR__ . "/credentials") {
   // Read password from file.
   try {
     $handle = fopen($authFile, "r");
