@@ -9,6 +9,10 @@
       <td><?= $firstLogin ?></td>
     </tr>
     <tr>
+      <th scope="row">Logins</th>
+      <td><?= $nLogins ?></td>
+    </tr>
+    <tr>
       <th scope="row">Chat messages sent</th>
       <td><?= $nMsg ?></td>
     </tr>
