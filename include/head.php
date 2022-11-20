@@ -3,6 +3,7 @@
 <meta name='robots' content='index,follow'>
 
 <link rel="stylesheet" href="/res/bootstrap.min.css">
+<link rel="stylesheet" href="/res/general.css">
 
 <script src="/res/jquery-3.6.1.min.js"></script>
 <script src="/res/bootstrap.min.js"></script>

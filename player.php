@@ -31,7 +31,7 @@
     <header class="border-bottom pb-3 mb-4">
       <div class="row">
         <div class="col-8">
-          <span class="fs-4">Statistics for Enyekala</span>
+          <a href="/" class="no-link-deco fs-4">Statistics for Enyekala</a>
         </div>
         <div class="col-4">
         <form action="/player" method="GET">
