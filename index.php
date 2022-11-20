@@ -21,7 +21,7 @@
 ?>
   <div class="container py-4">
     <header class="border-bottom pb-3 mb-4">
-      <a href="/" class="no-link-deco fs-4">Statistics for Enyekala</a>
+      <?php include("include/page-title.php"); ?>
     </header>
     <div class="bg-light rounded-3 p-5 mb-5">
       <h1 class="fw-bold display-5">Welcome!</h1>

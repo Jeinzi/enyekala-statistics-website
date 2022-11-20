@@ -31,7 +31,7 @@
     <header class="border-bottom pb-3 mb-4">
       <div class="row">
         <div class="col-8">
-          <a href="/" class="no-link-deco fs-4">Statistics for Enyekala</a>
+          <?php include("include/page-title.php"); ?>
         </div>
         <div class="col-4">
         <form action="/player" method="GET">
