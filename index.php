@@ -25,7 +25,7 @@
     </header>
     <div class="bg-light rounded-3 p-5 mb-5">
       <h1 class="fw-bold display-5">Welcome!</h1>
-      This website provides statistics for the <a href="http://arklegacy.duckdns.org">Enyekala</a> Minetest server, also known als "Must Test".
+      This website provides statistics for the <a href="http://arklegacy.duckdns.org">Enyekala</a> Minetest server, also known as "Must Test".
       <form action="/player" method="GET">
         <div class="input-group mt-3">
           <input type="text" name="name" placeholder="Enter the name of a player for details…" class="form-control" autofocus>
@@ -34,9 +34,10 @@
       </form>
     </div>
     <h2>Most Active Players</h2>
-    <table class="table">
+    <table class="table responsive-table">
       <thead>
         <tr>
+          <th scope="col">#</th>
           <th scope="col">Name</th>
           <th scope="col">First Login</th>
           <th scope="col">Logins</th>
@@ -45,8 +46,10 @@
         </tr>
       </thead>
       <?php
+        $i = 1;
         while ($row = $query->fetch(PDO::FETCH_ASSOC)) {
           template("table-row-player", array(
+            "rank" => $i++,
             "name" => $row["name"],
             "chunks"  => $row["chunks"],
             "nMsg"  => $row["nMessages"],
