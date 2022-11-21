@@ -1,8 +1,8 @@
 <?php
 
 // Adds a fixed alert to the bottom of the page.
-function alert($text) {
-  echo '<div class="alert alert-danger alert-dismissible alert-static fade show mt-2" role="alert">';
+function alert($text, $alertClass="alert-danger") {
+  echo '<div class="alert ' . $alertClass . ' alert-dismissible alert-static fade show mt-2" role="alert">';
   echo $text;
   echo '<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>';
   echo '</div>';
@@ -15,7 +15,7 @@ function alert($text) {
 // - 1st line: database user
 // - 2nd line: database password
 // - 3rd line: database host, e.g. localhost
-function connectDb($authFile = __DIR__ . "/credentials") {
+function connectDb($authFile = __DIR__ . "/db-credentials") {
   // Read password from file.
   try {
     $handle = fopen($authFile, "r");
