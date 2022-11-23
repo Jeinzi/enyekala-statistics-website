@@ -30,20 +30,25 @@
   <div class="container py-4">
     <header class="border-bottom pb-3 mb-4">
       <div class="row">
-        <div class="col-8">
+        <div class="col-sm-6 col-md-7 col-lg-8">
           <?php include("include/page-title.php"); ?>
         </div>
-        <div class="col-4">
-        <form action="/player" method="GET">
-          <div class="input-group">
-            <input type="text" name="name" placeholder="C'mon, enter another one" class="form-control" autofocus>
-            <button type="submit" class="btn btn-success">Go!</button>
-          </div>
-        </form>
+        <div class="col-sm-6 col-md-5 col-lg-4">
+        <?php
+          template("player-search-form", array(
+            "placeholder" => "C'mon, enter another name",
+            "classes"  => "d-none d-sm-flex",
+          ));
+        ?>
         </div>
       </div>
-      
     </header>
+    <?php
+      template("player-search-form", array(
+        "placeholder" => "C'mon, enter another name",
+        "classes"  => "d-sm-none",
+      ));
+    ?>
     <div class="row">
       <div class="col-12">
       <?php

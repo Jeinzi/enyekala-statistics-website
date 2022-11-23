@@ -26,12 +26,12 @@
     <div class="bg-light rounded-3 p-5 mb-5">
       <h1 class="fw-bold display-5">Welcome!</h1>
       This website provides statistics for the <a href="http://arklegacy.duckdns.org">Enyekala</a> Minetest server, also known as "Must Test".
-      <form action="/player" method="GET">
-        <div class="input-group mt-3">
-          <input type="text" name="name" placeholder="Enter the name of a player for details…" class="form-control" autofocus>
-          <button type="submit" class="btn btn-success">Go!</button>
-        </div>
-      </form>
+      <?php
+        template("player-search-form", array(
+          "placeholder" => "Enter the name of a player for details…",
+          "classes"  => "mt-3",
+        ));
+      ?>
     </div>
     <h2>Most Active Players</h2>
     <table class="table responsive-table">
