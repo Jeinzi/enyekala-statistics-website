@@ -52,16 +52,39 @@
     <div class="row">
       <div class="col-12">
       <?php
+        function formatPlaytime($seconds) {
+          if ($seconds === NULL) {
+            return "unknown";
+          }
+
+          $dtF = new \DateTime('@0');
+          $dtT = new \DateTime("@$seconds");
+          if ($seconds < 60) {
+            return $seconds . " s";
+          }
+          if ($seconds < 3600) {
+            return $dtF->diff($dtT)->format('%i:%s min');
+          }
+          if ($seconds < 3600*24) {
+            return $dtF->diff($dtT)->format('%h:%i:%s h');
+          }
+          return $dtF->diff($dtT)->format('%a days, %h:%i:%s h');;
+        }
+
         if ($query->rowCount() == 0) {
           alert("No user named '" . $name . "' found.");
         }
         else {
+          $seconds = $row["totalTime"];
+          $totalTime = formatPlaytime($seconds);
           template("table-player-stats", array(
             "name" => $row["name"],
             "chunks"  => $row["chunks"],
             "nMsg"  => $row["nMessages"],
             "nLogins" => $row["nLogins"],
-            "firstLogin" => $row["firstLogin"]
+            "firstLogin" => $row["firstLogin"],
+            "lastSeen" => $row["lastSeen"],
+            "totalTime" => $totalTime,
           ));
         }
       ?>

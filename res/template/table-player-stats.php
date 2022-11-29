@@ -9,6 +9,10 @@
       <td><?= $firstLogin ?></td>
     </tr>
     <tr>
+      <th scope="row">Last seen</th>
+      <td><?= $lastSeen ?></td>
+    </tr>
+    <tr>
       <th scope="row">Logins</th>
       <td><?= $nLogins ?></td>
     </tr>
