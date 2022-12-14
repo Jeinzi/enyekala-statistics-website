@@ -92,5 +92,6 @@
     </div>
   </div>
   <?php include("include/footer.php"); ?>
+  <script src="res/autocomplete-players.js"></script>
 </body>
 </html>

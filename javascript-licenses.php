@@ -21,14 +21,19 @@
     <div class="col">
       <table id="jslicense-labels1" class="mx-auto">
         <tr>
-          <td><a href="/res/bootstrap.min.js">bootstrap.min.js</a></td>
+          <td><a href="/res/bootstrap.bundle.min.js">bootstrap.bundle.min.js</a></td>
           <td><a href="http://www.jclark.com/xml/copying.txt">MIT (Expat)</a></td>
-          <td><a href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.js">bootstrap.js</a></td>
+          <td><a href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.js">bootstrap.bundle.js</a></td>
         </tr>
         <tr>
           <td><a href="/res/jquery-3.6.1.min.js">jquery-3.6.1.min.js</a></td>
           <td><a href="http://www.jclark.com/xml/copying.txt">MIT (Expat)</a></td>
           <td><a href="https://code.jquery.com/jquery-3.6.1.js">jquery-3.6.1.js</a></td>
+        </tr>
+        <tr>
+          <td><a href="/res/autocomplete-players.js">autocomplete-players.js</a></td>
+          <td><a href="http://www.jclark.com/xml/copying.txt">MIT (Expat)</a></td>
+          <td><a href="/res/autocomplete-players.js">autocomplete-players.js</a></td>
         </tr>
       </table>
     </div>
