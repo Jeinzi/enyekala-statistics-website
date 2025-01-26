@@ -1,6 +1,10 @@
 .no-link-deco {
   text-decoration: none;
-  color: inherit !important;
+  color: inherit;
+}
+
+.no-link-deco:hover {
+  color: inherit;
 }
 
 @media (max-width: 575px) {
